@@ -1,5 +1,0 @@
-Para executar os testes siga os seguintes passos:
-    1) Instale node.js
-    2) Abra o terminal e navegue até a pasta do projeto.
-    3) Execute o comando "npm install".
-    4) Excute o comando "npm run test:chrome".

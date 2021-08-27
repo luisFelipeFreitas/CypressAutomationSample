@@ -8,5 +8,6 @@
         "json":true,
         "timestamp":"ddmmyyyy_HHMMss"
     },
-    "projectId":"o56v6p"
+    "projectId":"o56v6p",
+    "video":false
 }

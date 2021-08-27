@@ -7,7 +7,7 @@ class HomePage{
     }
     
     procurarPorItem(itemName){
-        cy.get("input.search_query").type(itemName).type("{enter}");
+        cy.get("input.search_query").type(itemName).should("have.value", itemName).type("{enter}");
     }
 }
 

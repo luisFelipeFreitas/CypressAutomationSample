@@ -1,0 +1,13 @@
+{
+    "scripts": {
+        "test:chrome": "cypress run --browser chrome --no-exit --record --key 417f0cae-b35b-40d7-9e81-c28f1a0a7ae0 --parallel --ci-build-id jenkins"
+    },
+    "cypress-cucumber-preprocessor": {
+        "step_definitions": "cypress/support/steps"
+    },
+    "devDependencies": {
+        "cypress": "^8.3.0",
+        "cypress-cucumber-preprocessor": "^4.2.0",
+        "mochawesome": "^4.1.0"
+    }
+}

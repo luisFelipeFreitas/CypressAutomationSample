@@ -1,3 +1,4 @@
+import SearchPage from "./searchPage";
 const url = "http://automationpractice.com/"
 
 class HomePage{
@@ -8,6 +9,7 @@ class HomePage{
     
     procurarPorItem(itemName){
         cy.get("input.search_query").type(itemName).should("have.value", itemName).type("{enter}");
+        return new SearchPage;
     }
 }
 

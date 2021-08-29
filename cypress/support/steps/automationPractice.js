@@ -4,25 +4,26 @@ import ProductPage from '../Page_models/productPage';
 import CheckoutPage from '../Page_models/checkoutPage';
 
 const homePage = new HomePage;
-const searchPage = new SearchPage;
-const productPage = new ProductPage;
-const checkoutPage = new CheckoutPage;
+let searchPage;
+let productPage;
+let checkoutPage;
 
 Given("que estou na homepage da loja",()=>{
     homePage.acessarHomePage();
 })
 
 When("Pesquisar por 'faded short sleeve'",()=>{
-    homePage.procurarPorItem("faded short sleeve");
+    searchPage =homePage.procurarPorItem("faded short sleeve");
+
 })
 
 And("adicionar ela ao meu carrinho",()=>{
-    searchPage.acessarItemEncontrado();
+    productPage = searchPage.acessarItemEncontrado();
     productPage.adicionarAoCarrinho();
 })
 
 And("ir a pagina de checkout",()=>{
-    productPage.checkoutAposAddCarrinho();
+    checkoutPage = productPage.checkoutAposAddCarrinho();
 })
 
 And("terei exatamente uma 'Faded short sleeve T-shirt' no cart.",()=>{

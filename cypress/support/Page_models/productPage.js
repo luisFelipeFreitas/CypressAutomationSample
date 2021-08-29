@@ -1,3 +1,5 @@
+import CheckoutPage from "./checkoutPage";
+
 class ProductPage{
     aumentarQuantidade(numeroDeVezes){
         for(let x=0;x<= numeroDeVezes; x++){
@@ -18,6 +20,7 @@ class ProductPage{
         //A melhor saída além disso seria clicar na seta com .icon-chevron-right
         //estou fazendo desta maneira pois este site não muda de lingua
         cy.contains("Proceed to checkout").click();
+        return new CheckoutPage;
     }
 
     continuarComprandoAposAddCarrinho(){

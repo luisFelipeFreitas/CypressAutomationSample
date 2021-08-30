@@ -7,4 +7,4 @@ Para executar o projeto:
     1) Instale npm.
     2) Navegue até a pasta raiz do projeto.
     3) Realize o comando "npm install".
-    4) Realize o comando npm test:chrome.
+    4) Realize o comando npm run test:chrome.
